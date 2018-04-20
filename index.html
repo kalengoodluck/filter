@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Let's use jQuery version 3.3.1-->
+<meta charset="utf-8">
+<!-- set the character set -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- first step to a responsive site -->
+<title>UXO Filter</title>
+
+<!-- FONT AWESOME -->
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Your styles should be called here -->
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Your javascript should be called here -->
+<script src="main.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+  <h2>Unexploded Munition Sites in NYC</h2>
+  <h5>By Kalen Goodluck<h5>
+  <h5><a href="https://twitter.com/kalengoodluck" target="_blank">@kalengoodluck</a><h5>
+  <p>Thousands of acres of land formerly used by the US military for firing ranges and weapon testing are now left with unexploded munitions and contaminated from weapons disposal. These military bases and their respective abandoned firing ranges are zones of limited access and perception to civilians, yet they are scattered near communities.</p>
+  <p>In 2001, Representative Bluemenauer claimed unexploded ordnance had killed 65 people. Since then, the Environmental Protection Agency and Department of Defense compiled a <a href="https://geopub.epa.gov/FedFac_cleanups/index.html" target="_blank">database</a> that identifies where UXO (unexploded ordnances) sites are.</p>
+  <p>While not all of these sites pose immediate danger, these sites are in the process of cleanup and disarmament of possible unexploded munitions.</p>
+  <p>Use this searchable table to find unexploded munition sites in your county.</p>
+
+  <input id="filter" class="form-control" type="text" placeholder="Enter search terms...">
+  <br>
+
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr><th>State</th><th>County</th><th>City</th><th>Property Name</th><th>Property number</th><th>Site number</th><th>Category</th></tr>
+    </thead>
+      <tbody id="content">
+      <tr><td>NY</td><td>Queens County</td><td>Breezy Point</td><td>Ft Tilden</td><td>C02NY0016</td><td>4</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Suffolk County</td><td>East Hampton</td><td>Cartwright Is Bomb Tar</td><td>C02NY0965</td><td>1</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Suffolk County</td><td>East Hampton</td><td>Fort Michie</td><td>C02NY0612</td><td>3</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Suffolk County</td><td>Fishers Island</td><td>Fort H G Wright</td><td>C02NY0610</td><td>1</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Suffolk County</td><td>Fishers Island</td><td>N Hill Fire Con Sta</td><td>C02NY0661</td><td>1</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Kings County</td><td>Fort Hamilton</td><td>Fort Lafayette</td><td>C02NY0752</td><td>1</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>New York County</td><td>Governors Island</td><td>Fort Jay</td><td>C02NY0611</td><td>1</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Nassau County</td><td>Hempstead</td><td>Mitchel Field</td><td>C02NY0645</td><td>3</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Jefferson County</td><td>Henderson</td><td>Madison Bks Trgt R</td><td>C02NY0204</td><td>0</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Onondaga County</td><td>Lysander</td><td>New York Ordnance Works</td><td>C02NY0290</td><td>3</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Saratoga County</td><td>Malta</td><td>Malta Test Sta</td><td>C02NY0898</td><td>2</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Suffolk County</td><td>Montauk</td><td>Cp Hero</td><td>C02NY0024</td><td>4</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Suffolk County</td><td>Montauk</td><td>Montauk Naval Sub Base</td><td>C02NY0766</td><td>2</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Westchester County</td><td>New Rochelle</td><td>Fort Slocum</td><td>C02NY0616</td><td>2</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Orange County</td><td>Cold Spring</td><td>Cold Spring Foundry</td><td>C02NY1127</td><td>1</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Oswego County</td><td>Oswego</td><td>Fort Ontario</td><td>C02NY0614</td><td>1</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Nassau County</td><td>Sands Point</td><td>Us Nav Trg Device Cen</td><td>C02NY0758</td><td>3</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Rockland County</td><td>Tomkins Cove</td><td>Iona Island Naval Ammunition Depot</td><td>C02NY0744</td><td>3</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Jefferson County</td><td>Watertown</td><td>Rochester Ord Sto Fac</td><td>C02NY0678</td><td>0</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Suffolk County</td><td>Westhampton</td><td>Suffolk Co Aaf&B&C Rge</td><td>C02NY0713</td><td>1</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Suffolk County</td><td>Westhampton</td><td>Suffolk County Afb</td><td>C02NY0712</td><td>4</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Seneca County</td><td>Willard</td><td>Sampson Afb</td><td>C02NY0032</td><td>2</td><td>MMRP</td></tr>
+      <tr><td>NY</td><td>Niagara County</td><td>Youngstown</td><td>Fort Niagara</td><td>C02NY0613</td><td>3</td><td>MMRP</td></tr>
+  </tbody>
+</table>
+<h4>Source: <a href="https://geopub.epa.gov/FedFac_cleanups/index.html" target="_blank">DoD and EPA dataset</a><h4>
+
+</div>
+
+</body>
+</html>
